@@ -32,6 +32,7 @@ jobs:
           username: ubuntu
           host: ${{ secrets.SSH_HOST }}
           key: ${{ secrets.SSH_KEY }}
+          port: '22'
           source: |
             build/libs/*.jar
           target: "/home/ubuntu/docker-last"
